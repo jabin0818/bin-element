@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'todo'",
+    "test": "pnpm --filter @bin-element/components test",
     "dev": "pnpm --filter @bin-element/play dev",
+    "story": "pnpm --filter @bin-element/play storybook",
     "docs:dev": "pnpm --filter @bin-element/docs dev",
     "docs:build": "pnpm --filter @bin-element/docs build"
   },
@@ -29,11 +30,17 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
-    "vue": "^3.4.19",
-    "bin-element": "workspace:*",
     "@bin-element/hooks": "workspace:*",
+    "@bin-element/theme": "workspace:*",
     "@bin-element/utils": "workspace:*",
-    "@bin-element/theme": "workspace:*"
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "bin-element": "workspace:*",
+    "eslint-plugin-vue": "^9.31.0",
+    "globals": "^15.12.0",
+    "lodash-es": "^4.17.21",
+    "typescript-eslint": "^8.14.0",
+    "vue": "^3.4.19"
   }
 }

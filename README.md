@@ -14,3 +14,8 @@
 - style.css 样式
 - constants.ts 常量
 - index.ts 入口文件
+
+## node.js 版本限制
+1. 确保已安装nvm并能正确运行
+2. git bash进入项目根目录
+3. 使用`nvm use ${cat .nvmrc}`命令切换版本
